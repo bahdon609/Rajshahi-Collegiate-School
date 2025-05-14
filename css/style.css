@@ -47,7 +47,7 @@ body {
 
 .header-bg {
     position: relative;
-    background-image: url('/image/slider2.jpg');
+    background-image: url('../image/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
