@@ -76,83 +76,163 @@
         <div class="px-3 text-white">হোম / যোগাযোগ </div>
     </div>
 
-    <!-- যোগাযোগ section start -->
-    <div class=" border border-success mt-3 ">
-        <div class="primary-header-bg py-2 px-3 text-white">যোগাযোগ </div>
-        <div class="row mx-2">
+    <div class="row">
+        <div class="col-lg-9">
+            <!-- যোগাযোগ section start -->
+            <div class=" border border-success mt-3 ">
+                <div class="primary-header-bg py-2 px-3 text-white">যোগাযোগ </div>
+                <div class="row mx-2">
 
-            <div class="col-lg-4 col-md-6 text-left footer-contact mt-sm-3">
+                    <div class="col-lg-4 col-md-6 text-left footer-contact mt-sm-3">
 
-                <div class="mb-2">
-                    <i class="fas fa-building me-2 mb-"></i>
-                    <span>রাজশাহী কলেজিয়েট স্কুল</span>
+                        <div class="mb-2">
+                            <i class="fas fa-building me-2 mb-"></i>
+                            <span>রাজশাহী কলেজিয়েট স্কুল</span>
+
+                        </div>
+                        <div class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <span>উপজেলা-বোয়ালিয়া, জেলা-রাজশাহী, বাংলাদেশ</span>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fas fa-phone-square-alt me-2"></i>
+                            <span>০১৩০৯১২৬৪৫৬</span>
+                        </div>
+                        <div class="mb-2">
+                            <i class="far fa-envelope me-2"></i>
+                            <span>raj.collegiateschool@gmail.com</span>
+                        </div>
+
+                    </div>
 
                 </div>
-                <div class="mb-2">
-                    <i class="fas fa-map-marker-alt me-2"></i>
-                    <span>উপজেলা-বোয়ালিয়া, জেলা-রাজশাহী, বাংলাদেশ</span>
-                </div>
-                <div class="mb-2">
-                    <i class="fas fa-phone-square-alt me-2"></i>
-                    <span>০১৩০৯১২৬৪৫৬</span>
-                </div>
-                <div class="mb-2">
-                    <i class="far fa-envelope me-2"></i>
-                    <span>raj.collegiateschool@gmail.com</span>
-                </div>
+            </div>
+
+            <!-- যোগাযোগ section end -->
+
+
+            <!-- email section -->
+
+            <div class="primary-header-bg py-2 px-3 text-white mt-3">আমাদের ইমেইল করুন </div>
+
+            <div class="border border-success p-2">
+                <form action="" method="post" class="p-3 border rounded shadow-sm bg-light">
+                    <input type="hidden" name="_token">
+
+                    <div class="mb-3">
+                        <label class="form-label">আপনার নাম <span class="text-danger">*</span></label>
+                        <input type="text" name="name" class="form-control py-3" placeholder="আপনার নাম লিখুন" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">ইমেইল আইডি <span class="text-danger">*</span></label>
+                        <input type="email" name="email" class="form-control py-3" placeholder="ইমেইল আইডি লিখুন" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">মোবাইল নাম্বার <span class="text-danger">*</span></label>
+                        <input type="text" name="phone" class="form-control py-3" placeholder="মোবাইল নাম্বার লিখুন" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">বিষয় <span class="text-danger">*</span></label>
+                        <input type="text" name="subject" class="form-control py-3" placeholder="বিষয় লিখুন" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">বিস্তারিত <span class="text-danger">*</span></label>
+                        <textarea name="content" rows="4" class="form-control py-3" placeholder="বিস্তারিত লিখুন" required></textarea>
+                    </div>
+
+                    <!-- Google reCAPTCHA -->
+                    <div class="mb-3">
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                        <div class="g-recaptcha" data-sitekey="6LfJymUpAAAAAHKVOoLVDSotsGkX_JncUnZVkg4e"></div>
+                    </div>
+
+                    <div class=" text-white">
+                        <button type="submit" class=" btn rounded-1 primary-header-bg text-white py-2 px-4 ">সাবমিট করুন</button>
+                    </div>
+                </form>
 
             </div>
+        </div>
+
+        <!-- Principal Section -->
+        <div class="col-lg-3  ">
+
+            <div class=" text-center border border-success px-0 mt-3">
+                <div class="card-header primary-header-bg text-light text-center py-2 mb-2 fw-bold">প্রধান শিক্ষক</div>
+                <img src="image/1722457307.jpg" alt="Principal" class="principal-img border border-dark-subtle ">
+                <div class="card-body my-2">
+                    <h5 class="card-title my-1">প্রধান শিক্ষক</h5>
+                    <a href="#555" class="mt-2 primary-a">প্রধান শিক্ষকের বাণী -></a>
+                </div>
+            </div>
+
+            <div class=" text-center border border-success px-0 mt-3">
+                <div class="card-header primary-header-bg text-light text-center py-2 mb-2 fw-bold">সভাপতি</div>
+                <img src="image/sobaputi.jpg" alt="Principal" class="principal-img border border-dark-subtle ">
+                <div class="card-body my-2">
+                    <h5 class="card-title my-1">আফিয়া আখতার</h5>
+                    <a href="#555" class="mt-2 primary-a">সভাপতির বাণী   -></a>
+                </div>
+            </div>
+
+
+            <!-- notice -->
+
+            <div class="border border-success mt-3 ">
+                <div class="primary-header-bg py-2 text-light fw-bold text-center">নোটিশ</div>
+                <div class="p-2 text-start">
+                    <div class="notice-link p-2 my-1">
+                        <a href="" class="text-decoration-none text-start d-block">
+                            <i class="far fa-hand-point-right text-success me-2"></i>
+                            <h6 class="d-inline">চলমান পরিস্থিতিতে শিক্ষা প্রতিষ্ঠানসমূহে সার্বিক সুষ্ঠু পরিবেশ বজায় রাখা সংক্রান্ত</h6>
+                        </a>
+                    </div>
+
+                    <div class="notice-link p-2 my-1">
+                        <a href="" class="text-decoration-none text-start d-block">
+                            <i class="far fa-hand-point-right text-success me-2"></i>
+                            <h6 class="d-inline">রাজশাহী মহানগরীর ৮ টি সরকারি স্কুলে অভিভাবকের বদলীজনিত কারণে শিক্ষার্থী ভর্তির রেজুলেশন</h6>
+                        </a>
+                    </div>
+
+                    <div class="notice-link p-2 my-1">
+                        <a href="" class="text-decoration-none text-start d-block">
+                            <i class="far fa-hand-point-right text-success me-2"></i>
+                            <h6 class="d-inline">২০২৫ শিক্ষাবর্ষে রাজশাহী মহানগরীর সরকারি মাধ্যমিক বিদ্যালয়ে ভর্তি বিজ্ঞপ্তি</h6>
+                        </a>
+                    </div>
+
+                    <div class="notice-link p-2 my-1">
+                        <a href="" class="text-decoration-none text-start d-block">
+                            <i class="far fa-hand-point-right text-success me-2"></i>
+                            <h6 class="d-inline">রাজশাহী কলেজিয়েট স্কুলের ২০২৫ সালের ষষ্ঠ শ্রেণির লটারী ফলাফল</h6>
+                        </a>
+                    </div>
+
+                    <a href="#" class="mt-2 d-block primary-a fw-bold text-center">সকল নোটিশ →</a>
+                </div>
+
+
+            </div>
+
+            <!-- hotline section -->
+
+
+            <!-- <div class=" text-center border border-success px-0 mt-3">
+            <div class="card-header primary-header-bg text-light text-center py-2 mb-2 fw-bold">জরুরি কল</div>
+            <div class="hotline-img mt-3 mx-auto">
+                <img src="image/hotline.jpg" class="img-fluid" alt="">
+            </div>
+        </div> -->
 
         </div>
     </div>
 
-    <!-- যোগাযোগ section end -->
 
-    <!-- email section -->
-
-    <div class="primary-header-bg py-2 px-3 text-white my-3">আমাদের ইমেইল করুন </div>
-
-    <div class="border border-success p-2">
-        <form action="" method="post" class="p-3 border rounded shadow-sm bg-light">
-            <input type="hidden" name="_token">
-
-            <div class="mb-3">
-                <label class="form-label">আপনার নাম <span class="text-danger">*</span></label>
-                <input type="text" name="name" class="form-control py-3" placeholder="আপনার নাম লিখুন" required>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">ইমেইল আইডি <span class="text-danger">*</span></label>
-                <input type="email" name="email" class="form-control py-3" placeholder="ইমেইল আইডি লিখুন" required>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">মোবাইল নাম্বার <span class="text-danger">*</span></label>
-                <input type="text" name="phone" class="form-control py-3" placeholder="মোবাইল নাম্বার লিখুন" required>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">বিষয় <span class="text-danger">*</span></label>
-                <input type="text" name="subject" class="form-control py-3" placeholder="বিষয় লিখুন" required>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">বিস্তারিত <span class="text-danger">*</span></label>
-                <textarea name="content" rows="4" class="form-control py-3" placeholder="বিস্তারিত লিখুন" required></textarea>
-            </div>
-
-            <!-- Google reCAPTCHA -->
-            <div class="mb-3">
-                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                <div class="g-recaptcha" data-sitekey="6LfJymUpAAAAAHKVOoLVDSotsGkX_JncUnZVkg4e"></div>
-            </div>
-
-            <div class=" text-white">
-                <button type="submit" class=" btn rounded-1 primary-header-bg text-white py-2 px-4 ">সাবমিট করুন</button>
-            </div>
-        </form>
-
-    </div>
 
     <!-- email section end  -->
 

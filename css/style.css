@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Tiro+Bangla:ital@0;1&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Tiro+Bangla:ital@0;1&display=swap'); */
+
 body {
     background-color: #F5F5F5;
+    font-family: 'SolaimanLipi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'SolaimanLipi';
+    src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 a {
@@ -28,7 +37,7 @@ a {
 .nav-item {
     font-size: 18px;
     color: white;
-    font-family: "Tiro Bangla", serif;
+    font-family: 'SolaimanLipi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .bg-color {
@@ -275,4 +284,168 @@ a {
 .list_info_span {
     color: green;
     font-weight: bold;
+}
+
+
+/* Smooth dropdown animation */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Initial hidden state */
+
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+    margin-top: 0;
+    /* override Bootstrap's spacing */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    background-color: #fff;
+    /* optional, override if needed */
+    z-index: 1000;
+}
+
+
+/* Stylish table header */
+
+.table-header {
+    background: linear-gradient(to right, #0d6efd, #198754);
+    /* Blue to green gradient */
+}
+
+
+/* Table body styling */
+
+.stylish-table tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.stylish-table tbody tr:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.01);
+}
+
+
+/* Table cells */
+
+.stylish-table th,
+.stylish-table td {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* Shadow and border radius */
+
+.stylish-table {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+
+/* Stylish table header */
+
+.table-header {
+    background: linear-gradient(to right, #0d6efd, #198754);
+    /* Blue to green gradient */
+}
+
+
+/* Table body styling */
+
+.stylish-table tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.stylish-table tbody tr:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.01);
+}
+
+
+/* Table cells */
+
+.stylish-table th,
+.stylish-table td {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* Shadow and border radius */
+
+.stylish-table {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+
+/* Custom service item colors (non-Bootstrap) */
+
+.bg-teal {
+    background-color: #20c997;
+}
+
+.bg-orange {
+    background-color: #fd7e14;
+}
+
+.bg-pink {
+    background-color: #e83e8c;
+}
+
+.bg-indigo {
+    background-color: #6610f2;
+}
+
+.bg-cyan {
+    background-color: #17a2b8;
+}
+
+
+/* Service Box Styles */
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.service-box span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    opacity: 0.9;
 }
