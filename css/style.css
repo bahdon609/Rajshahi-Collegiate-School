@@ -183,7 +183,7 @@ a {
 }
 
 .min-container {
-    width: 93vw;
+    width: 96vw;
     /* default for small screens */
     margin: 0 auto;
 }
@@ -254,4 +254,25 @@ a {
 
 .galler-img {
     border-radius: 5px;
+}
+
+.ie-list-margin {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 100%;
+}
+
+.ie-list-margin {
+    display: flex;
+    flex-direction: column;
+}
+
+.list_info_span {
+    color: green;
+    font-weight: bold;
 }
