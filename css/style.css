@@ -596,3 +596,33 @@ a {
 .principal-img {
     height: 300px;
 }
+
+.table-botton-total {
+    background-color: rgba(240, 232, 196, 0.295);
+    color: #000;
+    text-align: end;
+}
+
+.table-header-bg {
+    background-color: #006A4E !important;
+    color: white !important;
+    font-size: 18px !important;
+    padding: 10px 20px !important;
+}
+
+td {
+    padding: 5px 20px !important;
+    font-size: 15px !important;
+}
+
+th {
+    padding: 5px 20px !important;
+    font-size: 15px !important;
+}
+
+.table-img-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
