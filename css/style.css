@@ -59,7 +59,11 @@ a {
 .header-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #006A4E;
+    color: #ffffff;
+}
+
+header>span {
+    display: none;
 }
 
 .header-bg {
@@ -644,5 +648,34 @@ th {
     transition: 0.3s ease;
     &:hover {
         background-color: #adb9b6;
+    }
+}
+
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 0.3s ease-in-out;
+    background-color: #006A4E;
+    width: 85vw;
+    margin: 0 auto;
+    padding: 6px 0;
+}
+
+
+/* Optional animation for smooth appearance */
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
