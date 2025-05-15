@@ -4,6 +4,8 @@
 body {
     background-color: #F5F5F5;
     font-family: 'SolaimanLipi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -18,12 +20,13 @@ a {
     font-size: 18px;
 }
 
-.w-default {
+
+/* .w-default {
     max-width: 80%;
     margin: 0 auto;
     background-color: #F5F5F5;
     box-shadow: 1px 1px 8px 0 rgb(26, 23, 22);
-}
+} */
 
 .navbar-nav .nav-link {
     color: white !important;
@@ -139,7 +142,6 @@ a {
     background-color: #00695c;
     color: white;
     padding: 10px 20px;
-    position: relative;
     text-align: center;
     font-weight: bold;
     clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
@@ -182,6 +184,7 @@ a {
     cursor: pointer;
     transition: all 0.3s ease;
     gap: 5px;
+    border-radius: 5px;
     &:hover {
         color: rgb(0, 0, 0);
         background-color: rgba(226, 112, 112, 0.295);
@@ -627,7 +630,19 @@ th {
     object-fit: cover;
 }
 
-.headmaster-cart {
-    max-width: 300px;
-    margin: 0 auto;
+@media (min-width:1000px) {
+    .headmaster-cart {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+.headmaster-buttom-title {
+    background-color: #D0E0DC;
+    padding-top: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+        background-color: #adb9b6;
+    }
 }
