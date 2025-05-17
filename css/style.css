@@ -6,6 +6,7 @@ body {
     font-family: 'SolaimanLipi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -149,7 +150,7 @@ header>span {
     text-align: center;
     font-weight: bold;
     clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
-    width: 200px;
+    width: 180px;
 }
 
 .news-label::after {
@@ -206,14 +207,15 @@ header>span {
 
 .min-container {
     width: 96vw;
-    /* default for small screens */
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 @media (min-width: 600px) {
     .min-container {
         width: 85vw;
         margin: 0 auto;
+        overflow-x: hidden;
     }
 }
 
@@ -237,26 +239,38 @@ header>span {
 
 /* for animation */
 
+.headline-bg {
+    height: 40px;
+    background-color: rgba(216, 216, 216, 0.795);
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.scroll-text {
+    flex-grow: 1;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
 .animated-div {
     white-space: nowrap;
-    animation: badhon 30s linear infinite;
-    font-size: 17px;
+    display: inline-block;
+    margin: 10px;
+    animation: badhon 20s linear infinite;
 }
 
 @keyframes badhon {
     0% {
-        transform: translateX(100%);
+        transform: translateX(230%);
     }
     100% {
         transform: translateX(-100%);
     }
-}
-
-.animation-container {
-    overflow: inherit;
-    text-wrap: wrap;
-    position: relative;
-    overflow-x: hidden;
 }
 
 .teacher-panel-image {
