@@ -67,6 +67,12 @@ header>span {
     display: none;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-bg {
     position: relative;
     background-image: url('../image/banner.jpg');
